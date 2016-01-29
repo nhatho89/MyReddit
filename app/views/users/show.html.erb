@@ -1,0 +1,4 @@
+<h1>User Profile</h1>
+<%= flash[:hey] %>
+<p>Welcome back <%=current_user.username %>!</p>
+<%= button_to "logout", session_url, method: "delete" %>
